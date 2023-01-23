@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Walut</title>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="header">Prosty kalkulator walutowy.</h1>
+    </header>
+    <main>
+        <form class="exchanger">
+            <fieldset>
+                <legend class="exchanger__legend">Oszacuj wartość swojej waluty</legend>
+                <p>
+                    <label class="exchanger__label">
+                        Posiadam walutę: <select class="js-inputCurrency">
+                            <option value="EUR" selected>Euro (EUR)</option>
+                            <option value="PLN" >Polski Złoty (PLN)</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label class="exchanger__label">
+                        w ilości: <input class="js-inputValue" type="number" step="0.01" value="0">
+                    </label>
+                </p>
+                <p>
+                    <label class="exchanger__label">
+                        Chcę otrzymać: <select class="js-outputCurrency">
+                            <option value="EUR" >Euro (EUR)</option>
+                            <option value="PLN" selected>Polski Złoty (PLN)</option>
+                        </select>
+                    </label>
+                </p>
+                <p>Po sprawdzeniu kursów NBP <span class="js-exchangeRatio"></span></p>
+                <p>
+                    <label class="exchanger__label">
+                        wychodzi że otrzymasz: <input class="js-outputValue" type="number" disabled>
+                    </label>
+                </p>
+            </fieldset>
+            <p>
+                <button class="exchanger__button">
+                    Przelicz !
+                </button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

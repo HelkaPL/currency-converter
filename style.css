@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+ }
+ 
+ *, ::after, ::before {
+     box-sizing: inherit;
+ }
+
+ .header {
+     color: gold; 
+    background-color: brown;
+    font-size: 2.5em;
+     text-align: center;
+ }
+
+ .exchanger {
+    margin: 0 auto;
+    max-width: 700px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+ }
+ .exchanger__legend {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+ }
+ .exchanger__button {
+    background: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px goldenrod;
+    cursor: pointer;
+ }
