@@ -20,7 +20,7 @@
             checkExchangeRatio(inCurrency, outCurrency)
             const outValue = inValue * exchangeRatio
             const outputValue = document.querySelector(".js-outputValue")
-            outputValue.value = outValue.toFixed(2)
+            outputValue.innerText = outValue.toFixed(2)
     }
     const onFormSubmit = e => {
         e.preventDefault();

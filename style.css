@@ -5,17 +5,22 @@ html {
  *, ::after, ::before {
      box-sizing: inherit;
  }
-
+.main {
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/02/22/27/european-union-1493894_960_720.jpg");
+    background-position: stretch;
+}
  .header {
-     color: gold; 
+    color: gold; 
     background-color: brown;
     font-size: 2.5em;
-     text-align: center;
+    text-align: center;
  }
 
  .exchanger {
     margin: 0 auto;
     max-width: 700px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.83);
     font-family: "Lato", sans-serif;
     text-align: center;
  }
@@ -24,10 +29,14 @@ html {
     font-weight: bold;
     font-size: large;
  }
+ .exchanger__label--bold {
+   font-weight: bold;
+}
  .exchanger__button {
-    background: none;
+    margin: 10px auto;
     padding: 10px 20px;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 0 10px goldenrod;
     cursor: pointer;
  }
