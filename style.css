@@ -7,7 +7,7 @@ html {
  }
 .main {
     background-image: url("https://cdn.pixabay.com/photo/2016/07/02/22/27/european-union-1493894_960_720.jpg");
-    background-position: stretch;
+    background-size: cover;
 }
  .header {
     color: gold; 
